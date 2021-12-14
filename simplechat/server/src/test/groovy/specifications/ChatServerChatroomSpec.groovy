@@ -2,6 +2,9 @@ package specifications
 
 import chatProject.model.messages.ChatInstance
 import chatProject.model.messages.Chatroom
+import chatProject.model.user.Status
+import chatProject.model.user.UserAccount
+import chatProject.model.user.UserInfo
 import chatProject.server.ChatServer
 import chatProject.server.ClientNotifierInterface
 import spock.lang.Specification
@@ -14,6 +17,8 @@ class ChatServerChatroomSpec extends Specification {
 
         when: "A new chatroom is created"
         server.addChatroom("Test chatroom", null)
+        //def userInfo = new UserInfo(new UserAccount(1, "amani"), Status.ACTIVE)
+        //server.addChatroom("Test chatroom", userInfo)
 
         then: "The new chatroom should be added to the model"
         server.currentChatroomNames.contains("Test chatroom")
@@ -28,7 +33,11 @@ class ChatServerChatroomSpec extends Specification {
         def server = new ChatServer(ChatInstance.initEmptyChat(), [clientNotifier], null)
 
         when: "A new chatroom is created"
-        server.addChatroom("Test chatroom", null)
+        def userInfo = new UserInfo(new UserAccount(1, "amani"), Status.ACTIVE)
+        // pb : users null ?
+        server.addChatroom("Test chatroom", userInfo)
+        //modified
+        //server.addChatroom("Test chatroom", null)
 
         then: "The client listener should be notified about a new chatroom"
         // this check means : the 'clientNotifier.notifyNewChatroom()' method was called 1x

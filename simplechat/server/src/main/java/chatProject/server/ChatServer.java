@@ -282,6 +282,8 @@ public class ChatServer<T> implements UserAlgo, ChatroomAlgo<T>, MessageAlgo<T>,
         final int newChatroomId = chatInstance.addChatroom(newChatroom);
 
         /* maybe I should notify clients about the new chatroom ?? */
+        //modified
+        notifyNewChatroom(newChatroom);
 
         return newChatroomId;
     }
@@ -319,7 +321,7 @@ public class ChatServer<T> implements UserAlgo, ChatroomAlgo<T>, MessageAlgo<T>,
         Message<T> newMessage = getChatroom(chatroomId).addMessage(user, content);
 
         // return new created message
-        //added
+        //modified
         return  newMessage;
     }
 
