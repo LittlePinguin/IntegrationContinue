@@ -1,0 +1,43 @@
+chatProject/client/chat/algo/ChatClient.java
+ chatProject.client.chat.algo.ChatClient
+ chatProject.client.chat.algo.ChatClient$1
+ chatProject.client.chat.algo.ChatClient$2
+ chatProject.client.chat.algo.ChatClient$3
+ chatProject.client.chat.algo.ChatClient$4
+ chatProject.client.chat.algo.ChatClient$5
+chatProject/client/chat/algo/SocketReader.java
+ chatProject.client.chat.algo.SocketReader
+ chatProject.client.chat.algo.SocketReader$1
+ chatProject.client.chat.algo.SocketReader$2
+chatProject/client/gui/text/chat/ChatroomGUI.java
+ chatProject.client.gui.text.chat.ChatroomGUI
+chatProject/client/Main.java
+ chatProject.client.Main
+chatProject/model/listener/ChatroomsListener.java
+ chatProject.model.listener.ChatroomsListener
+chatProject/FakeInstances.java
+ chatProject.FakeInstances
+chatProject/model/login/Authentication.java
+ chatProject.model.login.Authentication
+chatProject/AddMessageForm.java
+ chatProject.AddMessageForm
+chatProject/client/gui/text/main/MainWindowGUI.java
+ chatProject.client.gui.text.main.MainWindowGUI
+chatProject/algo/ChatroomAlgo.java
+ chatProject.algo.ChatroomAlgo
+chatProject/model/listener/UserListener.java
+ chatProject.model.listener.UserListener
+chatProject/algo/MessageAlgo.java
+ chatProject.algo.MessageAlgo
+chatProject/algo/UserAlgo.java
+ chatProject.algo.UserAlgo
+chatProject/client/gui/text/helpers/GUIHelpers.java
+ chatProject.client.gui.text.helpers.GUIHelpers
+chatProject/client/gui/text/chat/NewChatroomGUI.java
+ chatProject.client.gui.text.chat.NewChatroomGUI
+chatProject/client/gui/text/MainGUI.java
+ chatProject.client.gui.text.MainGUI
+chatProject/model/listener/MessageListener.java
+ chatProject.model.listener.MessageListener
+chatProject/client/gui/text/user/LoginGUI.java
+ chatProject.client.gui.text.user.LoginGUI
