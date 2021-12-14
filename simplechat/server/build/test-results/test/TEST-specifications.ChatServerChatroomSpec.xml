@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="specifications.ChatServerChatroomSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-11-19T18:32:35" hostname="DESKTOP-HI2O5S6" time="0.06">
+  <properties/>
+  <testcase name="Adding a new Chatroom should notify clients about the new chatroom" classname="specifications.ChatServerChatroomSpec" time="0.06">
+    <failure message="Too few invocations for:&#10;&#10;1 * clientNotifier.notifyNewChatroom(_)   (0 invocations)&#10;&#10;Unmatched invocations (ordered by similarity):&#10;&#10;None&#10;&#10;" type="org.spockframework.mock.TooFewInvocationsError">Too few invocations for:
+
+1 * clientNotifier.notifyNewChatroom(_)   (0 invocations)
+
+Unmatched invocations (ordered by similarity):
+
+None
+
+
+	at org.spockframework.mock.runtime.InteractionScope.verifyInteractions(InteractionScope.java:98)
+	at org.spockframework.mock.runtime.MockController.leaveScope(MockController.java:77)
+	at specifications.ChatServerChatroomSpec.Adding a new Chatroom should notify clients about the new chatroom(ChatServerChatroomSpec.groovy:31)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[78 [Test worker] INFO com.athaydes.spockframework.report.SpockReportExtension - Got configuration from Spock: com.athaydes.spockframework.report.internal.SpockReportsConfiguration([:])
+155 [Test worker] INFO com.athaydes.spockframework.report.internal.ConfigLoader - SpockReports config loaded: {com.athaydes.spockframework.report.aggregatedJsonReportDir=, com.athaydes.spockframework.report.showCodeBlocks=false, com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension=md, com.athaydes.spockframework.report.testSourceRoots=src/test/groovy, com.athaydes.spockframework.report.IReportCreator=com.athaydes.spockframework.report.internal.HtmlReportCreator, com.athaydes.spockframework.report.outputDir=build/spock-reports, com.athaydes.spockframework.report.internal.HtmlReportCreator.inlineCss=true, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss=spock-feature-report.css, com.athaydes.spockframework.report.hideEmptyBlocks=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss=spock-summary-report.css, com.athaydes.spockframework.report.projectVersion=Unknown, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile=/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.specSummaryNameOption=class_name_and_title, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile=/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.excludeToc=false, com.athaydes.spockframework.report.template.TemplateReportCreator.enabled=true, com.athaydes.spockframework.report.projectName=, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName=summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.printThrowableStackTrace=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.enabled=true}
+]]></system-err>
+</testsuite>
