@@ -45,7 +45,11 @@ class ChatServerMessageSpec extends Specification {
         int chatroomId = server.addChatroom(null, null)
 
         when: "A new message is added"
-        server.addMessage(chatroomId, null, "Test message")
+        def userInfo = new UserInfo(new UserAccount(1, "amani"), Status.ACTIVE)
+        // pb
+        server.addMessage(chatroomId, userInfo, "Test message")
+        //modified
+        //server.addMessage(chatroomId, null, "Test message")
 
         then: "The client listener should be notified about a new message"
         // this check means : the 'clientNotifier.notifyNewMessage()' method was called 1x
